@@ -1,0 +1,256 @@
+/* ==================================== */
+/* 1. Variables i Reset Bàsic */
+/* ==================================== */
+:root {
+    --color-primary: #1e88e5; 
+    --color-secondary: #0d47a1; 
+    --color-background: #f5f5f5; 
+    --color-text: #333333; 
+    --color-light: #ffffff; 
+    --padding-page: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* ==================================== */
+/* 2. Estructura General i Capçalera (Header, Main, Footer) */
+/* ==================================== */
+
+header {
+    background-color: var(--color-light);
+    padding: var(--padding-page);
+    border-bottom: 3px solid var(--color-primary);
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header img {
+    height: 40px; 
+    width: auto;
+    margin-right: auto; /* Posiciona la imatge a l'esquerra */
+}
+
+header h1 {
+    /* Centrat del títol al header sense divs */
+    margin-left: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content; 
+    z-index: 5;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 1.5em;
+}
+
+header nav {
+    position: relative;
+    z-index: 10;
+}
+
+/* ESTIL D'ESPAIAT SOL·LICITAT */
+h2 {
+    /* Marge inferior per separar el títol del contingut següent */
+    margin-bottom: 25px; 
+    padding-bottom: 5px; 
+    border-bottom: 1px solid #ddd;
+}
+/* Espaiat per subtítols */
+h3, h4 {
+    margin-bottom: 15px;
+}
+/* Fi dels estils d'espaiat */
+
+
+/* MAIN: Maquetació de 2 Columnes (Section + Aside) amb Flexbox */
+main {
+    padding: 40px var(--padding-page);
+    display: flex; 
+    gap: 30px; 
+    min-height: 70vh; 
+}
+
+/* Ajust per a les pàgines sense aside (Contacte i Llistat) */
+#formulari-contacte, #llistat-complet {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Secció de Projectes Destacats (3/4 de l'ample) */
+#projectes-destacats {
+    flex: 3; 
+}
+
+/* Estil dels Articles (Projectes) */
+.projecte {
+    background-color: var(--color-light);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Maquetació d'Imatge + Text un al costat de l'altre */
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+}
+
+.projecte img {
+    max-width: 250px; 
+    height: auto;
+    border-radius: 4px;
+    margin: 0; 
+}
+
+.projecte h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Aside: Barra lateral (1/4 de l'ample) */
+aside {
+    flex: 1; 
+    background-color: #e0f7fa; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    text-align: center;
+    padding: 15px;
+}
+
+.xarxes a {
+    color: var(--color-light);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* ==================================== */
+/* 3. Estil de Navegació i Botons (HOVER OBLIGATORI) */
+/* ==================================== */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul a.nav {
+    color: var(--color-secondary);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul a.nav:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+/* Estil base per a tots els botons d'acció */
+.btn, .btn-secundari, .btn-enviar {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; 
+    text-align: center;
+    margin-top: 15px; 
+    font-weight: bold;
+    transition: all 0.3s ease; 
+}
+
+.btn, .btn-enviar {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-secundari {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+/* REQUISIT: Canvi d'aspecte en passar per sobre (HOVER) */
+.btn:hover, .btn-enviar:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ==================================== */
+/* 4. Estils de Formulari i Llistat */
+/* ==================================== */
+
+/* Estil del Llistat de Projectes (projects.html) */
+.projecte-llista {
+    background-color: var(--color-light);
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+/* Validació de Formularis HTML5 */
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+}
