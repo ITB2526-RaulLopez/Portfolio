@@ -129,131 +129,84 @@ nav ul a:hover {
 }
 
 /* ==================================== */
-/* 3. CONTINGUT PRINCIPAL (Main) */
+/* 3. LLISTAT DE PROJECTES              */
 /* ==================================== */
 main {
-    padding: 40px 20px;
-    display: flex; 
-    gap: 30px; 
-    flex-grow: 1; /* Empeny el footer cap avall */
-    align-items: flex-start; /* Projectes alineats a dalt */
+    padding: 60px 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centrat horitzontal */
+    align-items: flex-start; /* Alineat a dalt */
 }
 
-/* Secció de Projectes (Esquerra) */
-#projectes-destacats {
-    flex: 2; 
+#llistat-complet {
+    width: 100%;
+    max-width: 800px;
 }
 
-#projectes-destacats h1 {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #0d47a1;
-    padding-bottom: 10px;
+#llistat-complet h2 {
+    margin-bottom: 40px;
     text-align: center;
     color: #0d47a1;
+    font-size: 2em;
+    border-bottom: 2px solid #1e88e5;
+    padding-bottom: 10px;
 }
 
-.projecte {
-    background-color: #ffffff; 
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center; 
-    gap: 20px; 
+.projecte-llista {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-left: 8px solid #1e88e5;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
 }
 
-.projecte img {
-    width: 200px;
-    height: auto;
-    border-radius: 4px;
+/* Efecte en passar el ratolí */
+.projecte-llista:hover {
+    transform: scale(1.02); /* Creix una mica */
+    border-left-color: #0d47a1;
+    background-color: #fcfcfc;
 }
 
-.projecte h3 {
-    margin-bottom: 10px;
+.projecte-llista h3 {
     color: #0d47a1;
-}
-
-/* Aside Lateral (Dreta) */
-aside {
-    flex: 1; 
-    background-color: #e0f7fa; 
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    
-    /* Centrat del contingut de l'aside */
-    align-self: center; 
-}
-
-aside h4 {
     margin-bottom: 15px;
-    color: #0d47a1;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
-aside p {
-    margin-bottom: 10px;
+.projecte-llista p {
+    margin-bottom: 20px;
+    color: #555555;
 }
 
-aside ul {
-    list-style: none;
-    margin: 15px 0;
-    padding-top: 10px;
-    border-top: 1px solid #b2ebf2;
-}
-
-aside ul li {
-    font-size: 0.9em;
-    margin-bottom: 5px;
-}
-
-/* ==================================== */
-/* 4. BOTONS I ACCIONS */
-/* ==================================== */
-.btn, .btn-secundari {
+/* Botó de la llista */
+.btn-llista {
     display: inline-block;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.3s;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.btn {
     background-color: #1e88e5;
     color: #ffffff;
-    border: 2px solid #1e88e5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.btn-secundari {
-    background-color: transparent;
-    color: #1e88e5;
-    border: 2px solid #1e88e5;
-    width: 100%; /* Botó ample per a l'aside */
-}
-
-.aside-buttons .btn {
-    width: 100%; /* Botó mail de contacto ample */
-}
-
-.btn:hover, .btn-secundari:hover {
+.btn-llista:hover {
     background-color: #0d47a1;
-    border-color: #0d47a1;
-    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ==================================== */
-/* 5. PEU DE PÀGINA (Footer) */
+/* 4. FOOTER (Comú)                     */
 /* ==================================== */
 footer {
     background-color: #0d47a1;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    margin-top: 40px;
 }
 
 footer .xarxes {

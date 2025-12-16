@@ -129,125 +129,75 @@ nav ul a:hover {
 }
 
 /* ==================================== */
-/* 3. CONTINGUT PRINCIPAL (Main) */
+/* 3. FORMULARI DE CONTACTE             */
 /* ==================================== */
 main {
     padding: 40px 20px;
-    display: flex; 
-    gap: 30px; 
-    flex-grow: 1; /* Empeny el footer cap avall */
-    align-items: flex-start; /* Projectes alineats a dalt */
-}
-
-/* Secció de Projectes (Esquerra) */
-#projectes-destacats {
-    flex: 2; 
-}
-
-#projectes-destacats h1 {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #0d47a1;
-    padding-bottom: 10px;
-    text-align: center;
-    color: #0d47a1;
-}
-
-.projecte {
-    background-color: #ffffff; 
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
     display: flex;
-    align-items: center; 
-    gap: 20px; 
+    justify-content: center; 
+    align-items: center;    
 }
 
-.projecte img {
-    width: 200px;
-    height: auto;
-    border-radius: 4px;
+#formulari-contacte {
+    width: 100%;
+    max-width: 500px; 
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.projecte h3 {
-    margin-bottom: 10px;
+#formulari-contacte h2 {
     color: #0d47a1;
-}
-
-/* Aside Lateral (Dreta) */
-aside {
-    flex: 1; 
-    background-color: #e0f7fa; 
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    
-    /* Centrat del contingut de l'aside */
-    align-self: center; 
-}
-
-aside h4 {
-    margin-bottom: 15px;
-    color: #0d47a1;
-    font-size: 1.2em;
-}
-
-aside p {
     margin-bottom: 10px;
-}
-
-aside ul {
-    list-style: none;
-    margin: 15px 0;
-    padding-top: 10px;
-    border-top: 1px solid #b2ebf2;
-}
-
-aside ul li {
-    font-size: 0.9em;
-    margin-bottom: 5px;
-}
-
-/* ==================================== */
-/* 4. BOTONS I ACCIONS */
-/* ==================================== */
-.btn, .btn-secundari {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
     text-align: center;
-    transition: 0.3s;
-    cursor: pointer;
-    margin-top: 10px;
 }
 
-.btn {
+#formulari-contacte p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.btn-enviar {
     background-color: #1e88e5;
     color: #ffffff;
-    border: 2px solid #1e88e5;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.btn-secundari {
-    background-color: transparent;
-    color: #1e88e5;
-    border: 2px solid #1e88e5;
-    width: 100%; /* Botó ample per a l'aside */
-}
-
-.aside-buttons .btn {
-    width: 100%; /* Botó mail de contacto ample */
-}
-
-.btn:hover, .btn-secundari:hover {
+.btn-enviar:hover {
     background-color: #0d47a1;
-    border-color: #0d47a1;
-    color: #ffffff;
 }
 
 /* ==================================== */
-/* 5. PEU DE PÀGINA (Footer) */
+/* 4. FOOTER                            */
 /* ==================================== */
 footer {
     background-color: #0d47a1;
@@ -256,17 +206,8 @@ footer {
     padding: 20px;
 }
 
-footer .xarxes {
-    margin-top: 10px;
-}
-
 footer .xarxes a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 0.9em;
-}
-
-footer .xarxes a:hover {
-    text-decoration: underline;
 }

@@ -1,54 +1,58 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacte - Portafoli</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <title>Portfolio - Contact</title>
+        <link rel="stylesheet" href="/css/contact.css">
+        <link rel="icon" href="/img/icono.jpg">
     </head>
     <body>
-        
         <header>
-            <h1><a href="index.html" class="nav">Portafoli</a></h1>
-            <img src="/img/logo.png" alt="logo-itb" width="200px">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="nav">Home</a></li>
-                    <li><a href="projects.html" class="nav">Projects</a></li>
-                    <li><a href="contact.html" class="nav">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+           <h1><a href="/html/index.html">Portfolio</a></h1>
+           <img src="/img/logo.png" alt="Logo de ITB">
+           <nav>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <ul class="dropdown-content">
+                            <li><a href="project1.html">Project 1</a></li>
+                            <li><a href="project2.html">Project 2</a></li>
+                        </ul>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+       </header>
         <main>
             <section id="formulari-contacte">
-                <h2>Contacta'm</h2>
+                <h2>Contact me</h2>
                 <p>Estic obert a col·laboracions i nous projectes. Deixa'm un missatge i et contestaré tan aviat com sigui possible.</p>
                 
                 <form action="#" method="POST" class="contact-form"> 
                     
-                    <label for="nom">Nom Complet:</label>
+                    <label for="nom">Full name:</label>
                     <input type="text" id="nom" name="nom" required>
                     
-                    <label for="email">Correu Electrònic:</label>
+                    <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" required>
                     
-                    <label for="telefon">Telèfon (9 dígits):</label>
+                    <label for="telefon">Phone number:</label>
                     <input type="tel" id="telefon" name="telefon" 
                            pattern="[0-9]{9}" 
                            title="Si us plau, introdueix exactament 9 dígits numèrics." 
                            required>
                     
-                    <label for="codi-postal">Codi Postal (5 dígits):</label>
+                    <label for="codi-postal">Postal code:</label>
                     <input type="text" id="codi-postal" name="codi-postal" 
                            pattern="[0-9]{5}" 
                            title="Introdueix 5 dígits numèrics" 
                            required>
                     
-                    <label for="missatge">Missatge:</label>
+                    <label for="missatge">Message:</label>
                     <textarea id="missatge" name="missatge" rows="6" required></textarea>
                     
-                    <button type="submit" class="btn-enviar">Enviar Missatge</button>
+                    <button type="submit" class="btn-enviar">Send</button>
                 </form>
             </section>
         </main>
@@ -59,7 +63,6 @@
                 |
                 <a href="https://github.com/ITB2526-AleixRamon" target="_blank">GitHub-Aleix</a>
                 |
-                <a href="https://linkedin.com/in/[el_teu_usuari]" target="_blank">LinkedIn</a>
             </div>
         </footer>
     </body>

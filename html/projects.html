@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Llistat de Projectes</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <title>Portfolio - Projects</title>
+        <link rel="stylesheet" href="/css/projects.css">
+        <link rel="icon" href="/img/icono.jpg">
     </head>
     <body>
         <header>
-            <h1><a href="index.html" class="nav">Portafoli</a></h1>
-            <img src="/img/logo.png" alt="logo-itb" width="200px">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="nav">Home</a></li>
-                    <li><a href="projects.html" class="nav">Projects</a></li>
-                    <li><a href="contact.html" class="nav">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+           <h1><a href="/html/index.html">Portfolio</a></h1>
+           <img src="/img/logo.png" alt="Logo de ITB">
+           <nav>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li class="dropdown">
+                        <a href="projects.html" class="dropbtn">Projects</a>
+                        <ul class="dropdown-content">
+                            <li><a href="project1.html">Project 1</a></li>
+                            <li><a href="project2.html">Project 2</a></li>
+                        </ul>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+       </header>
         <main>
             <section id="llistat-complet">
-                <h2>Tots els Meus Projectes</h2>
+                <h2>All my projects</h2>
                 
                 <article class="projecte-llista">
                     <h3>Project 1: Train an AI</h3>
@@ -33,17 +39,6 @@
                     <p>Enfocat en la funcionalitat de Javascript i l'ús de Flexbox per a un disseny responsiu. **[El segon de la llista ha d'estar enllaçat]**</p>
                     <a href="project2.html" class="btn-llista">Veure Detall</a>
                 </article>
-                
-                <article class="projecte-llista">
-                    <h3>3. Projecte X: Redisseny de Blog</h3>
-                    <p>Optimització de la càrrega i l'estructura SEO. </p>
-                </article>
-                
-                <article class="projecte-llista">
-                    <h3>4. Projecte Y: Formulari Avançat</h3>
-                    <p>Pràctica en validació de dades amb JavaScript i expressions regulars.</p>
-                </article>
-            </section>
         </main>
         <footer>
             <p>&copy; 2025 Raúl & Aleix. Tots els drets reservats.</p>
