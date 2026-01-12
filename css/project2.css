@@ -253,3 +253,37 @@ code {
     border-radius: 4px;
     font-family: monospace;
 }
+
+ /*FUNCIONALITAT JAVASCRIPT: Ampliació d'Imatges*/
+ 
+ .modal-zoom {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    cursor: zoom-out;
+}
+.modal-zoom img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+/*FUNCIONALITAT JAVASCRIPT: Efecte Typewriter*/
+
+#typing-text::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

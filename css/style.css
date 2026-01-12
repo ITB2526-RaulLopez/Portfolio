@@ -145,8 +145,8 @@ main {
 }
 
 #projectes-destacats h1 {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #0d47a1;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #1e88e5;
     padding-bottom: 10px;
     text-align: center;
     color: #0d47a1;
@@ -174,25 +174,27 @@ main {
     color: #0d47a1;
 }
 
-/* Aside Lateral (Dreta) */
+/* Aside Lateral */
 aside {
     flex: 1; 
     background-color: #e0f7fa; 
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    
-    /* Centrat del contingut de l'aside */
-    align-self: center; 
+    display: flex;
+    flex-direction: column;
+    align-self: stretch; 
 }
 
 aside h4 {
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     color: #0d47a1;
     font-size: 1.2em;
 }
 
 aside p {
+    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
@@ -200,7 +202,7 @@ aside ul {
     list-style: none;
     margin: 15px 0;
     padding-top: 10px;
-    border-top: 1px solid #b2ebf2;
+    border-top: 2px solid #b2ebf2;
 }
 
 aside ul li {
@@ -208,9 +210,21 @@ aside ul li {
     margin-bottom: 5px;
 }
 
-/* ==================================== */
+#map-container {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 500px;       
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#map-container img {
+    width: 100%;
+    display: block;
+}
+
 /* 4. BOTONS I ACCIONS */
-/* ==================================== */
+
 .btn, .btn-secundari {
     display: inline-block;
     text-decoration: none;
@@ -269,4 +283,18 @@ footer .xarxes a {
 
 footer .xarxes a:hover {
     text-decoration: underline;
+}
+ 
+/*FUNCIONALITAT JAVASCRIPT: Efecte Typewriter*/
+
+#typing-text::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
