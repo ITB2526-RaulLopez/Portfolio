@@ -29,52 +29,47 @@
        <main>
            <section id="projecte-github">
                <header class="center-header">
-                   <h2 id="typing-text">GitHub Project Setup</h2>
-                   <p>Summary of the steps for creating the repository and linking it with PyCharm.</p>
+                   <h2 id="typing-text">Network Security Scanner</h2>
+                   <p>Automated tool developed in Python to identify active hosts and open ports within a local network.</p>
                </header>
 
                <article class="projecte-llista">
-                   <h3>1. Account and Repository Creation</h3>
-                   <p>Create a GitHub account and a new repository using the following naming convention: <code>ITB2526-TA02-FirstNameLastName</code>.</p>
+                   <h3>1. Environment Setup & Scapy Integration</h3>
+                   <p>The core of the scanner uses the <code>Scapy</code> library to send ARP requests and discover devices in the network range.</p>
                    <section class="img-container">
-                       <img src="/img/foto" alt="Step 1: GitHub Registration" class="img-tutorial">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_1B.png" alt="Step 1: Repo Configuration" class="img-tutorial">
+                       <img src="/img/project1-1.png" alt="Python Script Environment" class="img-tutorial">
                    </section>
                </article>
 
                <article class="projecte-llista">
-                   <h3>2. Two-Factor Authentication (2FA)</h3>
-                   <p>It is <strong>mandatory</strong> to enable two-step authentication in GitHub's security settings.</p>
+                   <h3>2. Port Scanning Logic</h3>
+                   <p>Implementation of a multi-threaded TCP connect scanner to check for common service ports (SSH, HTTP, FTP).</p>
                    <section class="img-container">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_2A.png" alt="Step 2: 2FA Activation" class="img-tutorial">
+                       <img src="/img/project1-2.png" alt="Scanning Logic Code" class="img-tutorial">
                    </section>
                </article>
 
                <article class="projecte-llista">
-                   <h3>3. Clone to PyCharm</h3>
-                   <p>From PyCharm, select "Get from VCS" and enter your repository URL to create the local copy.</p>
+                   <h3>3. Vulnerability Mapping</h3>
+                   <p>The tool compares identified service banners against a local database of known CVE vulnerabilities.</p>
                    <section class="img-container">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_3A.png" alt="Step 3: Get from VCS" class="img-tutorial">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_3B.png" alt="Step 3: Paste URL" class="img-tutorial">
+                       <img src="/img/project1-3.png" alt="Vulnerability Report Example" class="img-tutorial">
                    </section>
                </article>
 
                <article class="projecte-llista">
-                   <h3>4. README.md File</h3>
-                   <p>Ensure that the project contains an explanatory <code>README.md</code> file.</p>
+                   <h3>4. Data Logging & Output</h3>
+                   <p>Results are automatically exported to a <code>results.log</code> file and displayed in a clean terminal table format.</p>
                    <section class="img-container">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_4A.png" alt="Step 4: README Content" class="img-tutorial">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_4B.png" alt="Step 4: README Preview" class="img-tutorial">
+                       <img src="/img/project1-4.png" alt="Terminal Output" class="img-tutorial">
                    </section>
                </article>
 
                <article class="projecte-llista">
-                   <h3>5. Add Resources and Commit</h3>
-                   <p>Add external files, perform the <strong>Commit</strong>, and then the <strong>Push</strong>.</p>
+                   <h3>5. GitHub Deployment</h3>
+                   <p>Final version pushed to GitHub following the ITB standards, including a comprehensive documentation in the <code>README.md</code>.</p>
                    <section class="img-container">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_5A.png" alt="Step 5: Drag files" class="img-tutorial">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_5B.png" alt="Step 5: Perform Commit" class="img-tutorial">
-                       <img src="img/NOM_DE_LA_TEVA_IMATGE_5C.png" alt="Step 5: Perform Push" class="img-tutorial">
+                       <img src="/img/project1-5.png" alt="GitHub Repo Preview" class="img-tutorial">
                    </section>
                </article>
                
@@ -84,14 +79,14 @@
            </section>
        </main>
        <footer>
-            <p>&copy; 2025 Raúl & Aleix. All rights reserved.</p>
+            <p>&copy; 2026, Raúl López. All rights reserved.</p>
             <div class="xarxes">
-                <a href="https://github.com/ITB2526-RaulLopez" target="_blank">GitHub-Raúl</a>
+                <a href="https://github.com/ITB2526-RaulLopez" target="_blank">GitHub</a>
                 |
-                <a href="https://github.com/ITB2526-AleixRamon" target="_blank">GitHub-Aleix</a>
+                <a href="https://www.linkedin.com/in/ra%C3%BAl-l%C3%B3pez-mag%C3%A1n-434938359/" target="_blank">Linkedin</a>
             </div>
         </footer>
         <script src="/js/typewriter.js"></script>
         <script src="/js/zoom.js"></script>
-   </body>
+    </body>
 </html>
