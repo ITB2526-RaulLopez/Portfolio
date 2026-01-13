@@ -1,13 +1,18 @@
-/*1. BASES I FONS*/
-
+/* ==================================== */
+/* 1. BASES I FONS                      */
+/* ==================================== */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;}
+    
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333333;
@@ -178,6 +183,20 @@ main {
 .projecte-llista p {
     margin-bottom: 20px;
     color: #555555;
+}
+
+article.projecte {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+.img-tutorial {
+    max-width: 200px; /* Ajusta este tamaño si la imagen es muy grande */
+    height: auto;
+    flex-shrink: 0; /* Evita que la imagen se mueva o cambie de tamaño */
 }
 
 /* Botó de la llista */
