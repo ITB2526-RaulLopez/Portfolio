@@ -1,6 +1,4 @@
-/* ==================================== */
-/* 1. BASES I FONS                      */
-/* ==================================== */
+/* 1. BASES I FONS */
 
 * {
     margin: 0;
@@ -33,9 +31,8 @@ body::before {
     z-index: -1; 
 }
 
-/* ==================================== */
-/* 2. HEADER (Amb Menú Desplegable)     */
-/* ==================================== */
+/* 2. HEADER (Amb Menú Desplegable) */
+
 header {
     background-color: #ffffff;
     padding: 20px;
@@ -43,7 +40,7 @@ header {
     display: flex; 
     align-items: center;
     justify-content: space-between;
-    position: relative; /* Important per al posicionament del menú */
+    position: relative;
 }
 
 header img { 
@@ -68,7 +65,6 @@ header h1 a {
     font-weight: bold;
 }
 
-/* Llista principal */
 nav ul {
     list-style: none;
     display: flex;
@@ -90,28 +86,26 @@ nav ul a:hover {
     color: #ffffff;
 }
 
-/* Lògica del Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
-    display: none;            /* Amagat per defecte */
+    display: none;          
     position: absolute;
     background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 100;
     border-radius: 4px;
-    top: 100%;                /* Apareix just a sota */
+    top: 100%;               
     left: 0;
     padding: 0;
-    flex-direction: column;   /* Els projectes un sota l'altre */
+    flex-direction: column;   
     gap: 0;
 }
 
-/* Estil dels enllaços dins del desplegable */
 .dropdown-content li {
     width: 100%;
 }
@@ -128,23 +122,20 @@ nav ul a:hover {
     color: #0d47a1;
 }
 
-/* Mostrar al passar el ratolí */
 .dropdown:hover .dropdown-content {
     display: flex;
 }
 
-/* ==================================== */
 /* 3. CONTINGUT PRINCIPAL (Main) */
-/* ==================================== */
+
 main {
     padding: 40px 20px;
     display: flex; 
     gap: 30px; 
-    flex-grow: 1; /* Empeny el footer cap avall */
-    align-items: flex-start; /* Projectes alineats a dalt */
+    flex-grow: 1; 
+    align-items: flex-start; 
 }
 
-/* Secció de Projectes (Esquerra) */
 #projectes-destacats {
     flex: 2; 
 }
@@ -188,12 +179,11 @@ article.projecte {
 }
 
 .img-tutorial {
-    max-width: 200px; /* Ajusta este tamaño si la imagen es muy grande */
+    max-width: 200px; 
     height: auto;
-    flex-shrink: 0; /* Evita que la imagen se mueva o cambie de tamaño */
+    flex-shrink: 0; 
 }
 
-/* Aside Lateral */
 aside {
     flex: 1; 
     background-color: #e0f7fa; 
@@ -266,11 +256,11 @@ aside ul li {
     background-color: transparent;
     color: #1e88e5;
     border: 2px solid #1e88e5;
-    width: 100%; /* Botó ample per a l'aside */
+    width: 100%;
 }
 
 .aside-buttons .btn {
-    width: 100%; /* Botó mail de contacto ample */
+    width: 100%; 
 }
 
 .btn:hover, .btn-secundari:hover {
@@ -279,9 +269,8 @@ aside ul li {
     color: #ffffff;
 }
 
-/* ==================================== */
 /* 5. PEU DE PÀGINA (Footer) */
-/* ==================================== */
+
 footer {
     background-color: #0d47a1;
     color: #ffffff;
@@ -304,7 +293,7 @@ footer .xarxes a:hover {
     text-decoration: underline;
 }
  
-/*FUNCIONALITAT JAVASCRIPT: Efecte Typewriter*/
+/* FUNCIONALITAT JAVASCRIPT: Efecte Typewriter */
 
 #typing-text::after {
     content: "|";
@@ -318,7 +307,7 @@ footer .xarxes a:hover {
     100% { opacity: 1; }
 }
 
- /*FUNCIONALITAT JAVASCRIPT: Ampliació d'Imatges*/
+ /* FUNCIONALITAT JAVASCRIPT: Ampliació d'Imatges */
  
 .modal-zoom {
     position: fixed;
@@ -331,6 +320,7 @@ footer .xarxes a:hover {
     z-index: 2000;
     cursor: zoom-out;
 }
+
 .modal-zoom img {
     max-width: 90%;
     max-height: 90%;
