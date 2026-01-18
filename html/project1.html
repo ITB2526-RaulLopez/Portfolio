@@ -5,23 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Home</title>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/project1.css">
-        <link rel="icon" href="/img/icono.jpg">
+        <link rel="stylesheet" href="../css/project1.css">
+        <link rel="icon" href="../img/icono.jpg">
     </head>
     <body>        
         <header>
-           <h1><a href="/index.html">Portfolio</a></h1>
-           <img src="/img/logo.png" alt="Logo de ITB">
+           <h1><a href="../index.html">Portfolio</a></h1>
+           <img src="../img/logo.png" alt="Logo de ITB">
            <nav>
                <ul>
-                   <li><a href="/index.html">Home</a></li>
+                   <li><a href="../index.html">Home</a></li>
                    <li class="dropdown">
-                        <a href="/html/projects.html" class="dropbtn">Projects</a>
+                        <a href="projects.html" class="dropbtn">Projects</a>
                         <ul class="dropdown-content">
-                            <li><a href="/html/project1.html">Network Security Scanner</a></li>
-                            <li><a href="/html/project2.html">High-Availability Server Setup</a></li>
+                            <li><a href="project1.html">Network Security Scanner</a></li>
+                            <li><a href="project2.html">High-Availability Server Setup</a></li>
                         </ul>
-                   <li><a href="/html/contact.html">Contact</a></li>
+                   </li>
+                   <li><a href="contact.html">Contact</a></li>
                </ul>
            </nav>
         </header>
@@ -36,7 +37,7 @@
                    <h3>1. Environment Setup & Scapy Integration</h3>
                    <p>The core of the scanner uses the <code>Scapy</code> library to send ARP requests and discover devices in the network range.</p>
                    <section class="img-container">
-                       <img src="/img/project1-1.png" alt="Python Script Environment" class="img-tutorial">
+                       <img src="../img/project1-1.png" alt="Python Script Environment" class="img-tutorial">
                    </section>
                </article>
 
@@ -44,7 +45,7 @@
                    <h3>2. Port Scanning Logic</h3>
                    <p>Implementation of a multi-threaded TCP connect scanner to check for common service ports (SSH, HTTP, FTP).</p>
                    <section class="img-container">
-                       <img src="/img/project1-2.png" alt="Scanning Logic Code" class="img-tutorial">
+                       <img src="../img/project1-2.png" alt="Scanning Logic Code" class="img-tutorial">
                    </section>
                </article>
 
@@ -52,7 +53,7 @@
                    <h3>3. Vulnerability Mapping</h3>
                    <p>The tool compares identified service banners against a local database of known CVE vulnerabilities.</p>
                    <section class="img-container">
-                       <img src="/img/project1-3.png" alt="Vulnerability Report Example" class="img-tutorial">
+                       <img src="../img/project1-3.png" alt="Vulnerability Report Example" class="img-tutorial">
                    </section>
                </article>
 
@@ -60,7 +61,7 @@
                    <h3>4. Data Logging & Output</h3>
                    <p>Results are automatically exported to a <code>results.log</code> file and displayed in a clean terminal table format.</p>
                    <section class="img-container">
-                       <img src="/img/project1-4.png" alt="Terminal Output" class="img-tutorial">
+                       <img src="../img/project1-4.png" alt="Terminal Output" class="img-tutorial">
                    </section>
                </article>
 
@@ -68,12 +69,12 @@
                    <h3>5. GitHub Deployment</h3>
                    <p>Final version pushed to GitHub following the ITB standards, including a comprehensive documentation in the <code>README.md</code>.</p>
                    <section class="img-container">
-                       <img src="/img/project1-5.png" alt="GitHub Repo Preview" class="img-tutorial">
+                       <img src="../img/project1-5.png" alt="GitHub Repo Preview" class="img-tutorial">
                    </section>
                </article>
                
                <section class="center-content margin-top-large">
-                   <a href="/html/projects.html" class="btn">Back to Projects</a>
+                   <a href="projects.html" class="btn">Back to Projects</a>
                </section>
            </section>
        </main>
@@ -85,7 +86,7 @@
                 <a href="https://www.linkedin.com/in/ra%C3%BAl-l%C3%B3pez-mag%C3%A1n-434938359/" target="_blank">Linkedin</a>
             </div>
         </footer>
-        <script src="/js/typewriter.js"></script>
-        <script src="/js/zoom.js"></script>
+        <script src="../js/typewriter.js"></script>
+        <script src="../js/zoom.js"></script>
     </body>
 </html>
